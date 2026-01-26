@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Academic Color Palette - Nature/Cell inspired */
+    --color-background: #FFFFFF;
+    --color-surface: #FAFAFA;
+    --color-text: #1A1A1A;
+    --color-text-muted: #666666;
+    --color-border: #E0E0E0;
+    
+    --color-primary: #003B5C; /* Deep academic blue */
+    --color-secondary: #8B1538; /* Burgundy accent - Nature-like */
+    --color-accent: #2C5282; /* Muted blue */
+    --color-highlight: #D4AF37; /* Subtle gold for emphasis */
+    
+    /* Typography - Academic journal style */
+    --font-serif: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
+    --font-sans: 'Inter', 'Helvetica Neue', -apple-system, sans-serif;
+    --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+    
+    /* Spacing - generous, editorial */
+    --spacing-section: 5rem;
+    --spacing-element: 2.5rem;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.01em;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    color: var(--color-text);
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+  }
+  
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  a:hover {
+    color: var(--color-secondary);
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+      line-height: 1.15;
+    }
+    
+    h2 {
+      font-size: 1.75rem;
+      line-height: 1.25;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+    }
+  }
+}
+
+/* Academic section styling */
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-secondary);
+  margin: 2rem 0;
+}
+
+/* Editorial two-column layout */
+.editorial-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Publication list styling - Nature-like */
+.publication-item {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+  transition: background-color 0.2s ease;
+}
+
+.publication-item:hover {
+  background-color: var(--color-surface);
+  padding-left: 1rem;
+  margin-left: -1rem;
+}
+
+/* Academic content blocks */
+.content-block {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.content-block:last-child {
+  border-bottom: none;
+}
+
+/* Figure caption style */
+.figure-caption {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+/* Pullquote/highlight style */
+.highlight-text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--color-primary);
+  font-weight: 400;
+  border-left: 3px solid var(--color-secondary);
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* Prevent layout overlap issues */
+* {
+  box-sizing: border-box;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+section {
+  position: relative;
+  clear: both;
+}
+
+/* Grid container fixes */
+.grid {
+  display: grid;
+  width: 100%;
+}
