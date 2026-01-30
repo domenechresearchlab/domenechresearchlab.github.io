@@ -13,8 +13,8 @@ export function PeoplePage() {
 
   const staff = [
     {
-      name: "Lab Manager Name",
-      role: "Lab Manager",
+      name: "Miosotis Acevedo",
+      role: "Research Assistant",
       focus:
         "Facility operations, protocol development, and trainee mentoring",
       methods: ["Cell Culture", "Microfabrication"],
@@ -24,17 +24,17 @@ export function PeoplePage() {
 
   const graduate = [
     {
-      name: "Graduate Student 1",
-      degree: "PhD Candidate",
+      name: "Carlos A. Barreto Gamarra",
+      degree: "PhD Candidate in Chemical Engineering",
       focus:
-        "MSC mechanobiology and topography-mediated potency regulation",
-      methods: ["Biomaterials", "Imaging", "Proteomics"],
-      keyProject: "Substrate topography and YAP/TAZ signaling",
+        "MSC mechanobiology and topography-mediated potency regulation [DRAFT]",
+      methods: ["Biomaterials", "Imaging", "Proteomics", "[DRAFT]"],
+      keyProject: "Substrate topography and YAP/TAZ signaling [DRAFT]",
       image: "https://i.pinimg.com/564x/a0/2e/6d/a02e6dd1a33ad4e314db826f33173f3d.jpg",
     },
     {
-      name: "Graduate Student 2",
-      degree: "PhD Candidate",
+      name: "Carolina Rivera",
+      degree: "PhD Candidate in Bioengineering",
       focus:
         "Tumor microenvironment engineering and drug resistance",
       methods: ["Microfluidics", "Imaging"],
@@ -42,27 +42,66 @@ export function PeoplePage() {
       image: "https://images.steamusercontent.com/ugc/1826783377633780484/012411805A8BFEB211D01A48D853971F8962FDF2/",
     },
     {
-      name: "Graduate Student 3",
-      degree: "MS Student",
+      name: "Leonel Vélez Román",
+      degree: "PhD Candidate in Bioengineering",
       focus:
         "EV biogenesis modulation and surface ligand profiling",
       methods: ["EV Isolation", "Proteomics"],
       keyProject: "MSC-EV targeting mechanisms",
       image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
     },
+    {
+      name: "Mared Roa Fontalvo",
+      degree: "MS Student in Chemical Engineering",
+      focus:
+        "EV biogenesis modulation and surface ligand profiling [DRAFT]",
+      methods: ["EV Isolation", "Proteomics", "[DRAFT"],
+      keyProject: "MSC-EV targeting mechanisms [DRAFT]",
+      image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
+    },
+    {
+      name: "Sebastián A. Cruz Romero",
+      degree: "MS Student in Bioengineering",
+      focus:
+        "EV biogenesis modulation and surface ligand profiling [DRAFT]",
+      methods: ["EV Isolation", "Proteomics", "[DRAFT"],
+      keyProject: "MSC-EV targeting mechanisms [DRAFT]",
+      image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
+    },
+    {
+      name: "Arleen Hidalgo",
+      degree: "ME Student in Bioengineering",
+      focus:
+        "EV biogenesis modulation and surface ligand profiling [DRAFT]",
+      methods: ["EV Isolation", "Proteomics", "[DRAFT"],
+      keyProject: "MSC-EV targeting mechanisms [DRAFT]",
+      image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
+    },
   ];
 
   const undergrad = [
     {
-      name: "Undergraduate Researcher 1",
-      year: "Senior",
-      focus: "Image analysis pipeline development",
+      name: "Viviana Vélez",
+      year: "Junior in Chemical Engineering",
+      focus: "Image analysis pipeline development [DRAFT]",
       image: "https://i.pinimg.com/474x/1a/35/fa/1a35fa268846dab61c96bae90007bdc5.jpg",
     },
     {
-      name: "Undergraduate Researcher 2",
-      year: "Junior",
-      focus: "Microfabrication and substrate characterization",
+      name: "Ariana Martell",
+      year: "Junior in Industrial Microbiology",
+      focus: "Microfabrication and substrate characterization [DRAFT]",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ncltS55iWTYbhYpDoZ9Tvwvc3Q1PA7tPuw&s",
+    },
+    {
+      name: "Emilio López",
+      year: "Junior in Chemical Engineering",
+      focus: "Microfabrication and substrate characterization [DRAFT]",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ncltS55iWTYbhYpDoZ9Tvwvc3Q1PA7tPuw&s",
+    },
+    {
+      name: "Jean Barreiro",
+      year: "Junior in Computer Science & Engineering",
+      focus: "Microfabrication and substrate characterization [DRAFT]",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ncltS55iWTYbhYpDoZ9Tvwvc3Q1PA7tPuw&s",
     },
   ];
