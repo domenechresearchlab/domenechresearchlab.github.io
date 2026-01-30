@@ -316,7 +316,7 @@ export function PublicationsPage() {
                   </p>
                   <div className="flex items-center gap-4 text-sm">
                     <a
-                      href={`https://doi.org/${pub.doi}`}
+                      href={`${pub.doi}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors"
