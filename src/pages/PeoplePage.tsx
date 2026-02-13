@@ -30,7 +30,7 @@ export function PeoplePage() {
         "MSC mechanobiology and topography-mediated potency regulation [DRAFT]",
       methods: ["Biomaterials", "Imaging", "Proteomics", "[DRAFT]"],
       keyProject: "Substrate topography and YAP/TAZ signaling [DRAFT]",
-      image: "https://i.pinimg.com/564x/a0/2e/6d/a02e6dd1a33ad4e314db826f33173f3d.jpg",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQHU5tVKFIP-tQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1677078517460?e=2147483647&v=beta&t=wyjTSCo5Q-CTaRvzV-zd09u8dJf-87fpA3DP28Hnguw",
     },
     {
       name: "Carolina Rivera",
@@ -39,7 +39,7 @@ export function PeoplePage() {
         "Tumor microenvironment engineering and drug resistance",
       methods: ["Microfluidics", "Imaging"],
       keyProject: "Microfluidic tumor-on-chip platform",
-      image: "https://images.steamusercontent.com/ugc/1826783377633780484/012411805A8BFEB211D01A48D853971F8962FDF2/",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQEeMtLUxslGtg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724110668301?e=2147483647&v=beta&t=pJV-7rwelrrWjWkFLpe93t0gaCTlPu_hpk4xqqQyABo",
     },
     {
       name: "Leonel Vélez Román",
@@ -48,7 +48,7 @@ export function PeoplePage() {
         "EV biogenesis modulation and surface ligand profiling",
       methods: ["EV Isolation", "Proteomics"],
       keyProject: "MSC-EV targeting mechanisms",
-      image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
+      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fairfoundry.upenn.edu%2Fteam%2Fleonel-velez%2F&psig=AOvVaw2J_QX9EK4zClIrv6W418Xz&ust=1771093317463000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPiCkvKK15IDFQAAAAAdAAAAABAE",
     },
     {
       name: "Mared Roa Fontalvo",
@@ -66,7 +66,7 @@ export function PeoplePage() {
         "EV biogenesis modulation and surface ligand profiling [DRAFT]",
       methods: ["EV Isolation", "Proteomics", "[DRAFT"],
       keyProject: "MSC-EV targeting mechanisms [DRAFT]",
-      image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
+      image: "https://avatars.githubusercontent.com/u/86060816?v=4",
     },
     {
       name: "Arleen Hidalgo",
@@ -96,7 +96,7 @@ export function PeoplePage() {
       name: "Emilio López",
       year: "Junior in Chemical Engineering",
       focus: "Microfabrication and substrate characterization [DRAFT]",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ncltS55iWTYbhYpDoZ9Tvwvc3Q1PA7tPuw&s",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQE4HRpNdrS7nA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730749614723?e=1772668800&v=beta&t=AOwncN_t6MdkoHzkcBqHY4gvkt5mjbJ6M7E_H9bMwP0",
     },
     {
       name: "Jean Barreiro",
