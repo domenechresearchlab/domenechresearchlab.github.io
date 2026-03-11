@@ -89,9 +89,9 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             className="flex items-center gap-4 group"
           >
             <img
-              src="https://ci3.googleusercontent.com/mail-sig/AIorK4x4x_lKEyZBFf0p4Hg3Sy966EatIf6Q24wUjT-2pyAabIjz2aLpEOtZTFw4TAoMg2hsVqpPhNOSgcfm"
+              src="/lab-logo.png"
               alt="Domenech Research Lab"
-              className="h-12"
+              className="h-12 w-auto object-contain"
             />
             <img
               src="https://images.squarespace-cdn.com/content/v1/603694a3db22ea06eeeadf2b/56abe34f-92aa-4dbf-8c4f-e30370467b71/stemcell.jpg"
