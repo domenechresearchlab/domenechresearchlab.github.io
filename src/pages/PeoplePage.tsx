@@ -1,4 +1,5 @@
-import { Mail, User } from "lucide-react";
+import React from "react";
+import { Mail, Linkedin } from "lucide-react";
 
 export function PeoplePage() {
   const pi = {
@@ -18,7 +19,8 @@ export function PeoplePage() {
       focus:
         "Facility operations, protocol development, and trainee mentoring",
       methods: ["Cell Culture", "Microfabrication"],
-      image: "https://i.pinimg.com/236x/b3/4f/42/b34f425979930d568e97932dd3cb8e5e.jpg",
+      linkedinUrl: "https://www.linkedin.com/in/miosotis-acevedo-106a53195/",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQFBVyrM4Ii8ig/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720029177224?e=1775088000&v=beta&t=0jPPoPUTBjOCEhZbxN7spIk7Dr05yFAzBfm_z3qyU-Y",
     },
   ];
 
@@ -29,17 +31,17 @@ export function PeoplePage() {
       focus:
         "MSC mechanobiology and topography-mediated potency regulation [DRAFT]",
       methods: ["Biomaterials", "Imaging", "Proteomics", "[DRAFT]"],
-      keyProject: "Substrate topography and YAP/TAZ signaling [DRAFT]",
-      image: "https://i.pinimg.com/564x/a0/2e/6d/a02e6dd1a33ad4e314db826f33173f3d.jpg",
+      linkedinUrl: "https://www.linkedin.com/in/cbarretogamarra/?originalSubdomain=pr",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQHU5tVKFIP-tQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1677078517460?e=1775088000&v=beta&t=gfi7lGn0zWrNzQ7V9IEl5yctZ1Vt5pxfypAVtg8cskM",
     },
     {
       name: "Carolina Rivera",
       degree: "PhD Candidate in Bioengineering",
       focus:
-        "Tumor microenvironment engineering and drug resistance",
-      methods: ["Microfluidics", "Imaging"],
-      keyProject: "Microfluidic tumor-on-chip platform",
-      image: "https://images.steamusercontent.com/ugc/1826783377633780484/012411805A8BFEB211D01A48D853971F8962FDF2/",
+        "Scalable Xeno-Free Bioreactor Expansion of MSC-derived Chondrocytes",
+      methods: ["Cell Differentiation", "Bioreactor Engineering", "Microfabrication"],
+      linkedinUrl: "https://www.linkedin.com/in/carolinarivera6/",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQEeMtLUxslGtg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724110668320?e=1775088000&v=beta&t=iCDvC2d_a8RJDPnHEw5DuIYaiBhck_yzuFJh39TxtKM",
     },
     {
       name: "Leonel Vélez Román",
@@ -47,8 +49,8 @@ export function PeoplePage() {
       focus:
         "EV biogenesis modulation and surface ligand profiling",
       methods: ["EV Isolation", "Proteomics"],
-      keyProject: "MSC-EV targeting mechanisms",
-      image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
+      linkedinUrl: "https://www.linkedin.com/in/leonel-velez-roman/",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQHwbJxE0jpIDA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713406666235?e=1775088000&v=beta&t=DzCIzF6kPmMgnt9YF0MT4QWlHIz43tp3F76Dj-DUaCs",
     },
     {
       name: "Mared Roa Fontalvo",
@@ -56,8 +58,8 @@ export function PeoplePage() {
       focus:
         "EV biogenesis modulation and surface ligand profiling [DRAFT]",
       methods: ["EV Isolation", "Proteomics", "[DRAFT"],
-      keyProject: "MSC-EV targeting mechanisms [DRAFT]",
-      image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
+      linkedinUrl: "https://www.linkedin.com/in/mared-roa-835342279/",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQGrtJGKxh0YrQ/profile-displayphoto-crop_800_800/B4EZmOFpjoKYAI-/0/1759025471175?e=1775088000&v=beta&t=xcK40Z51O27BHnMX6C_-a9bMQgQOoMFyUJnt1G5BTnw",
     },
     {
       name: "Sebastián A. Cruz Romero",
@@ -65,8 +67,8 @@ export function PeoplePage() {
       focus:
         "EV biogenesis modulation and surface ligand profiling [DRAFT]",
       methods: ["EV Isolation", "Proteomics", "[DRAFT"],
-      keyProject: "MSC-EV targeting mechanisms [DRAFT]",
-      image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
+      linkedinUrl: "https://linkedin.com/in/romercruzsa",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQGwyoYrGZKE-w/profile-displayphoto-shrink_400_400/B4EZbGUkLsHIAk-/0/1747084003771?e=1775088000&v=beta&t=uRRLMYjLxz3O3yrWT79pdx_JpXnPGFB-BMmBeFhScL4",
     },
     {
       name: "Arleen Hidalgo",
@@ -74,35 +76,41 @@ export function PeoplePage() {
       focus:
         "EV biogenesis modulation and surface ligand profiling [DRAFT]",
       methods: ["EV Isolation", "Proteomics", "[DRAFT"],
-      keyProject: "MSC-EV targeting mechanisms [DRAFT]",
-      image: "https://tiermaker.com/images/chart/chart/lego-star-wars-ll---the-original-trilogy-characters--dlc-15078757/5jpg.png",
+      linkedinUrl: "https://www.linkedin.com/in/arleen-hidalgo/",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQHKUmzrr009vw/profile-displayphoto-shrink_800_800/B56ZTsLBMeHoAc-/0/1739129106197?e=1775088000&v=beta&t=TH2KJ-6-abAL8fpVDnScFtLPAIMIvnMCDZEecq8xP94",
     },
   ];
 
   const undergrad = [
     {
-      name: "Viviana Vélez",
-      year: "Junior in Chemical Engineering",
-      focus: "Image analysis pipeline development [DRAFT]",
-      image: "https://i.pinimg.com/474x/1a/35/fa/1a35fa268846dab61c96bae90007bdc5.jpg",
+      name: "Adrian D. Bonilla González",
+      year: "Junior in Industrial Microbiology",
+      linkedinUrl: "https://www.linkedin.com/in/adrian-bonilla-gonzález-0647802a8/overlay/background-image/",
+      image: "",
     },
     {
       name: "Ariana Martell",
       year: "Junior in Industrial Microbiology",
-      focus: "Microfabrication and substrate characterization [DRAFT]",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ncltS55iWTYbhYpDoZ9Tvwvc3Q1PA7tPuw&s",
+      linkedinUrl: "https://www.linkedin.com/in/ariana-martell-vega-90a106322/",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQEI2ThiFchrCw/profile-displayphoto-crop_800_800/B4EZzaP9.MHQAI-/0/1773188146213?e=1775088000&v=beta&t=nbcilQaLrtFlzbfR78a7mwx8v0cho_Eu7uYraxd34tc",
+    },
+    {
+      name: "Viviana Vélez",
+      year: "Junior in Chemical Engineering",
+      linkedinUrl: "https://www.linkedin.com/in/viviana-vélez-55547a205/",
+      image: "https://media.licdn.com/dms/image/v2/C4E03AQE2hSL6vRVx7g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1628280221717?e=1775088000&v=beta&t=fj-6gNGoi1UMSTisQh-6nMDHSS0XPhCKR9R8tRXmTWU",
     },
     {
       name: "Emilio López",
       year: "Junior in Chemical Engineering",
-      focus: "Microfabrication and substrate characterization [DRAFT]",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ncltS55iWTYbhYpDoZ9Tvwvc3Q1PA7tPuw&s",
+      linkedinUrl: "https://www.linkedin.com/in/emilio-a-lópez-3a6652316/",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQE4HRpNdrS7nA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730749614723?e=1775088000&v=beta&t=6ief7tAARyxCJSsrKOaXbLDTh0s8v571sXkgdD7l3YI",
     },
     {
       name: "Jean Barreiro",
       year: "Junior in Computer Science & Engineering",
-      focus: "Microfabrication and substrate characterization [DRAFT]",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ncltS55iWTYbhYpDoZ9Tvwvc3Q1PA7tPuw&s",
+      linkedinUrl: "https://www.linkedin.com/in/jean-barreiro/",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQGKk43g0o_MFw/profile-displayphoto-crop_800_800/B4EZyhr_yqIQAI-/0/1772239192633?e=1775088000&v=beta&t=Ndfrn9gF_18tLA5qovwMMG8_c77nr4W8ggSpKAnqnSo",
     },
   ];
 
@@ -214,10 +222,20 @@ export function PeoplePage() {
                     ))}
                   </div>
                   <div className="text-sm text-[var(--color-text-muted)]">
-                    <span className="font-medium">
-                      Key work:
-                    </span>{" "}
-                    {student.keyProject}
+                    {student.linkedinUrl ? (
+                      <a
+                        href={student.linkedinUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors"
+                      >
+                        <Linkedin size={16} />
+                      </a>
+                    ) : (
+                      <span className="inline-flex items-center gap-2 text-[var(--color-text-muted)] opacity-60">
+                        <Linkedin size={16} />
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
@@ -254,6 +272,22 @@ export function PeoplePage() {
                     </span>
                   ))}
                 </div>
+                <div className="mt-3 text-sm">
+                  {person.linkedinUrl ? (
+                    <a
+                      href={person.linkedinUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors"
+                    >
+                      <Linkedin size={16} />
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center gap-2 text-[var(--color-text-muted)] opacity-60">
+                      <Linkedin size={16} />
+                    </span>
+                  )}
+                </div>
               </div>
             </div>
           ))}
@@ -276,9 +310,21 @@ export function PeoplePage() {
                   <div className="text-sm text-[var(--color-text-muted)] mb-2">
                     {student.year}
                   </div>
-                  <p className="text-sm text-[var(--color-text-muted)]">
-                    {student.focus}
-                  </p>
+                  {student.linkedinUrl ? (
+                    <a
+                      href={student.linkedinUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)] hover:text-[var(--color-primary)] transition-colors"
+                    >
+                      <Linkedin size={16} />
+                    </a>
+                  ) : (
+                    <span className="inline-flex items-center gap-2 text-sm text-[var(--color-text-muted)] opacity-60">
+                      <Linkedin size={16} />
+                      LinkedIn
+                    </span>
+                  )}
                 </div>
               </div>
             ))}
@@ -286,12 +332,12 @@ export function PeoplePage() {
         </section>
 
         {/* Alumni */}
-        <section>
+        {/* <section>
           <h2 className="mb-8">Alumni</h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12"> */}
             {/* Graduate Alumni */}
-            <div>
+            {/* <div>
               <h3 className="mb-6 text-lg font-semibold text-[var(--color-text)]">Graduate Alumni</h3>
               <div className="space-y-6">
                 {graduateAlumni.map((person, idx) => (
@@ -313,10 +359,10 @@ export function PeoplePage() {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Undergraduate Alumni */}
-            <div>
+            {/* <div>
               <h3 className="mb-6 text-lg font-semibold text-[var(--color-text)]">Undergraduate Alumni</h3>
               <div className="space-y-6">
                 {undergradAlumni.map((person, idx) => (
@@ -336,7 +382,7 @@ export function PeoplePage() {
               </div>
             </div>
           </div>
-        </section>
+        </section>  */}
       </div>
     </div>
   );
