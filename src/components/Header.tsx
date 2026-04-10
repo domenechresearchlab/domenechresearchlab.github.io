@@ -60,16 +60,16 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
       label: 'People',
       items: [
         { id: 'people', label: 'Team' },
-        { id: 'join', label: 'Join the Lab' },
+        // { id: 'join', label: 'Join the Lab' },
       ],
     },
-    {
-      label: 'Resources',
-      items: [
-        { id: 'data', label: 'Data & Protocols' },
-        { id: 'news', label: 'News & Updates' },
-      ],
-    },
+    // {
+    //   label: 'Resources',
+    //   items: [
+    //     { id: 'data', label: 'Data & Protocols' },
+    //     { id: 'news', label: 'News & Updates' },
+    //   ],
+    // },
     {
       label: 'About',
       items: [

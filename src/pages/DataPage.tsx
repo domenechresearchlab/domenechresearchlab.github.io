@@ -88,7 +88,7 @@ export function DataPage() {
           </div>
         </section>
 
-        {/* Protocol Index */}
+        {/* Protocol Index
         <section className="mb-20 pb-16 border-b border-[var(--color-border)]">
           <h2 className="mb-8">Protocol Index</h2>
 
@@ -114,9 +114,9 @@ export function DataPage() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
-        {/* Datasets */}
+        {/* Datasets
         <section className="mb-20 pb-16 border-b border-[var(--color-border)]">
           <h2 className="mb-8">Datasets</h2>
 
@@ -149,9 +149,9 @@ export function DataPage() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
-        {/* Code & Analysis */}
+        {/* Code & Analysis
         <section>
           <h2 className="mb-8">Code & Analysis Notebooks</h2>
           
@@ -179,7 +179,7 @@ export function DataPage() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );
