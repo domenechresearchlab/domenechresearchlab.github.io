@@ -60,16 +60,16 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
       label: 'People',
       items: [
         { id: 'people', label: 'Team' },
-        { id: 'join', label: 'Join the Lab' },
+        // { id: 'join', label: 'Join the Lab' },
       ],
     },
-    {
-      label: 'Resources',
-      items: [
-        { id: 'data', label: 'Data & Protocols' },
-        { id: 'news', label: 'News & Updates' },
-      ],
-    },
+    // {
+    //   label: 'Resources',
+    //   items: [
+    //     { id: 'data', label: 'Data & Protocols' },
+    //     { id: 'news', label: 'News & Updates' },
+    //   ],
+    // },
     {
       label: 'About',
       items: [
@@ -89,7 +89,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
             className="flex items-center gap-4 group"
           >
             <img
-              src="https://ci3.googleusercontent.com/mail-sig/AIorK4x4x_lKEyZBFf0p4Hg3Sy966EatIf6Q24wUjT-2pyAabIjz2aLpEOtZTFw4TAoMg2hsVqpPhNOSgcfm"
+              src="./public/lab-logo.png"
               alt="Domenech Research Lab"
               className="h-12"
             />

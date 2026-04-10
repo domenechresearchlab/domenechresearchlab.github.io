@@ -9,7 +9,7 @@ export function Footer() {
           {/* Logo and About */}
           <div className="md:col-span-2">
             <img
-              src="https://ci3.googleusercontent.com/mail-sig/AIorK4x4x_lKEyZBFf0p4Hg3Sy966EatIf6Q24wUjT-2pyAabIjz2aLpEOtZTFw4TAoMg2hsVqpPhNOSgcfm"
+              src="./public/lab-logo.png"
               alt="Domenech Research Lab"
               className="h-10 mb-4 brightness-0 invert"
             />

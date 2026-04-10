@@ -269,13 +269,13 @@ export function HomePage({ onNavigate }: HomePageProps) {
                 className="max-h-16 w-auto object-contain"
               />
             </div>
-            <div className="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
+            {/* <div className="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
               <img 
                 src="https://cawt.upr.edu/wp-content/uploads/2021/03/cawt-lg.png" 
                 alt="CAWT"
                 className="max-h-16 w-auto object-contain"
               />
-            </div>
+            </div> */}
             <div className="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
               <img 
                 src="https://images.squarespace-cdn.com/content/v1/603694a3db22ea06eeeadf2b/1614192771365-RATNKBXOT94FXXVBIRT4/rhsc-transparent-logo.png" 
@@ -311,7 +311,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
       {/* Call to Action Sections */}
       <section>
         <div className="max-w-[1200px] mx-auto px-8 lg:px-12 py-16 lg:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div
               onClick={() => onNavigate('people')}
               className="cursor-pointer group border-t-2 border-[var(--color-primary)] pt-6"
@@ -327,7 +327,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               </div>
             </div>
 
-            <div
+            {/* <div
               onClick={() => onNavigate('join')}
               className="cursor-pointer group border-t-2 border-[var(--color-secondary)] pt-6"
             >
@@ -340,7 +340,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
               <div className="inline-flex items-center gap-2 text-[var(--color-secondary)] font-medium text-sm group-hover:gap-3 transition-all">
                 Open positions <ArrowRight size={16} />
               </div>
-            </div>
+            </div> */}
 
             <div
               onClick={() => onNavigate('contact')}
