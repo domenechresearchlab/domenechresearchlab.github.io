@@ -1,11 +1,45 @@
 import { useState } from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ScrollText } from 'lucide-react';
+
+type Publication = {
+  title: string;
+  authors: string;
+  journal?: string;
+  year: string;
+  volume?: string;
+  pages?: string;
+  doi?: string;
+  type?: 'article' | 'patent';
+  patentNumber?: string;
+  patentRef?: string;
+  pillar?: string;
+};
 
 export function PublicationsPage() {
   const [selectedYear, setSelectedYear] = useState<string>('all');
   const [selectedPillar, setSelectedPillar] = useState<string>('all');
 
-  const publications = [
+  const publications: Publication[] = [
+  {
+    title:
+      'Magnetoelastic Cell Monitoring System for Evaluating the Effects of Surface Chemistry on the Performance of Mesenchymal Stem Cell Growth',
+    authors:
+      'Skinner, W. S., Rivera-Crespo, C., Gebreyesus, E. A., Cifuentes, S., Tan, S., Douglas, T., Domenech-Garcia, M., Ong, K. G.',
+    journal: 'Biotechnology and Bioengineering',
+    year: '2026',
+    doi: 'doi.org/10.1002/bit.70255',
+  },
+  {
+    title:
+      'TiO2-based Adsorption Platform for Non-Invasive Capture and Quantification of Cell-Derived Secretome Biomarkers',
+    authors:
+      'Jimenez-Osorio, J., Rivera-Crespo, C., Meza-Morales, W., Buendia-Otero, M. J., Ramos-Alamo, M., Jimenez-Corzo, D., Ayus-Martinez, S., Domenech, M., Mora, C.',
+    journal: 'Bioprocess and Biosystems Engineering',
+    year: '2026',
+    volume: '49',
+    pages: '1047-1062',
+    doi: 'doi.org/10.1007/s00449-026-03306-w',
+  },
   {
     title: 'Aerosolizable Formulations of Porcine Extracellular Matrix with Antibacterial and Immunomodulatory Effects',
     authors:
@@ -24,7 +58,7 @@ export function PublicationsPage() {
     year: '2021',
     volume: '121',
     pages: '339-348',
-    // doi: '',
+    doi: 'doi.org/10.1016/j.actbio.2020.11.041',
   },
   {
     title:
@@ -56,7 +90,7 @@ export function PublicationsPage() {
     year: '2018',
     // volume: '',
     pages: '173-190',
-    // doi: '',
+    doi: 'doi.org/10.1201/9781315151755-7',
   },
   {
     title: 'Effects of Physical, Chemical, and Biological Stimulus on h-MSC Expansion and Their Functional Characteristics',
@@ -72,24 +106,23 @@ export function PublicationsPage() {
     title:
       'Ergosterol Peroxide Disrupts Triple-Negative Breast Cancer Mitochondrial Function and Inhibits Tumor Growth and Metastasis',
     authors:
-      'Bocachica-Adorno, A. L., Aponte-Ramos, A. Y., Rivera-Fuentes, P. S., Espinosa-Ponce, N. P., Arroyo-Cruz, L. V., Ling, T., Pérez-Ríos, N., Rivas-Tumanyan, S., Almodóvar-Rivera, I. A., Barreto-Gamarra, C.',
+      'Bocachica-Adorno, A. L., Aponte-Ramos, A. Y., Rivera-Fuentes, P. S., Espinosa-Ponce, N. P., Arroyo-Cruz, L. V., Ling, T., Pérez-Ríos, N., Rivas-Tumanyan, S., Almodóvar-Rivera, I. A., Barreto-Gamarra, C., Domenech-García, M., Rivas, F., Martínez-Montemayor, M. M.',
     journal: 'International Journal of Molecular Sciences',
     year: '2025',
     volume: '26',
     // issue: '10',
     pages: '4588',
-    // doi: '',
+    doi: 'doi.org/10.3390/ijms26104588',
   },
   {
     title:
       'EUS-Guided Biopsy of Pancreatic Mass Lesions for the Development of Patient-Derived Organoids in Puerto Rico',
     authors: 'Flores Perez, A. S., Mendez Vega, J., Reyes Ramos, A. M., Micames, C., Torres-Lugo, M., Domenech, M.',
-    journal: 'Cancer Research',
-    year: '2021',
-    volume: '81',
+    journal: 'Cancer Research (AACR Annual Meeting 2022)',
+    year: '2022',
+    volume: '82',
     pages: '43-44',
-    // doi: '',
-    // note: 'Conference abstract (AACR)',
+    doi: 'https://doi.org/10.1158/1538-7445.AM2022-3075',
   },
   {
     title: 'Heparan Sulfate-Collagen Surface Multilayers Support Serum-Free Microcarrier Culture of Mesenchymal Stem Cells',
@@ -131,7 +164,7 @@ export function PublicationsPage() {
     year: '2021',
     // volume: '',
     // pages: '',
-    // doi: '',
+    doi: 'doi.org/10.5772/intechopen.96338',
   },
   {
     title:
@@ -165,7 +198,7 @@ export function PublicationsPage() {
     volume: '11',
     // issue: '10',
     pages: '1522',
-    // doi: '',
+    doi: 'doi.org/10.3390/cancers11101522',
   },
   {
     title: 'PCL/PEO Polymer Membrane Prevents Biofouling in Wearable Detection Sensors',
@@ -175,7 +208,7 @@ export function PublicationsPage() {
     volume: '13',
     // issue: '8',
     pages: '728',
-    // doi: '',
+    doi: 'doi.org/10.3390/membranes13080728',
   },
   {
     title: 'Polystyrene Topography Sticker Array for Cell-Based Assays',
@@ -185,7 +218,7 @@ export function PublicationsPage() {
     volume: '2',
     // issue: '2',
     pages: '10-21926',
-    // doi: '',
+    doi: 'doi.org/10.21926/rpm.2002013',
   },
   {
     title:
@@ -193,9 +226,9 @@ export function PublicationsPage() {
     authors: 'Echeverría-Altamar, K., Barreto-Gamarra, C., Domenech-García, M., Resto-Irizarry, P.',
     journal: 'Biosensors and Bioelectronics',
     year: '2025',
-    // volume: '',
+    volume: '283',
     pages: '117528',
-    // doi: '',
+    doi: 'https://doi.org/10.1016/j.bios.2025.117528',
   },
   {
     title: 'Substrate Topographies Modulate the Secretory Activity of Human Bone Marrow Mesenchymal Stem Cells',
@@ -214,7 +247,117 @@ export function PublicationsPage() {
     year: '2023',
     volume: '11',
     pages: '1124250',
-    // doi: '',
+    doi: 'https://doi.org/10.3389/fcell.2023.1124250',
+  },
+  {
+    title: 'Open Multi-Culture Platform for Simple and Flexible Study of Multi-Cell Type Interactions',
+    authors:
+      'Álvarez-García, Y. R., Ramos-Cruz, K. P., Agostini-Infanzón, R. J., Stallcop, L. E., Beebe, D. J., Warrick, J. W., Domenech, M.',
+    journal: 'Lab on a Chip',
+    year: '2018',
+    volume: '18',
+    pages: '3184-3195',
+    doi: 'doi.org/10.1039/C8LC00560E',
+  },
+  {
+    title: 'Razor-Printed Sticker Microdevices for Cell-Based Applications',
+    authors:
+      'Stallcop, L. E., Álvarez-García, Y. R., Reyes-Ramos, A. M., Ramos-Cruz, K. P., Morgan, M. M., Shi, Y., Li, L., Beebe, D. J., Domenech, M., Warrick, J. W.',
+    journal: 'Lab on a Chip',
+    year: '2018',
+    volume: '18',
+    pages: '451-462',
+    doi: 'doi.org/10.1039/C7LC00724H',
+  },
+  {
+    title:
+      'Hedgehog-Mesenchyme Gene Signature Identifies Bi-Modal Prognosis in Luminal and Basal Breast Cancer Sub-Types',
+    authors: 'Torres-García, W., Domenech, M.',
+    journal: 'Molecular BioSystems',
+    year: '2017',
+    volume: '13',
+    pages: '2615-2624',
+    doi: 'doi.org/10.1039/C7MB00416H',
+  },
+  {
+    title: 'Tissue Engineering Strategies for Myocardial Regeneration: Acellular Versus Cellular Scaffolds?',
+    authors: 'Domenech, M., Polo-Corrales, L., Ramirez-Vick, J. E., Freytes, D. O.',
+    journal: 'Tissue Engineering Part B: Reviews',
+    year: '2016',
+    volume: '22',
+    pages: '438-458',
+    doi: 'doi.org/10.1089/ten.teb.2015.0523',
+  },
+  {
+    title: 'Phosphodiesterase 4D Inhibitors Limit Prostate Cancer Growth Potential',
+    authors:
+      'Powers, G. L., Hammer, K. D., Domenech, M., Frantskevich, K., Malinowski, R. L., Bushman, W., Beebe, D. J., Marker, P. C.',
+    journal: 'Molecular Cancer Research',
+    year: '2015',
+    volume: '13',
+    pages: '149-160',
+    doi: 'doi.org/10.1158/1541-7786.mcr-14-0110',
+  },
+  {
+    title: 'Lysosomal Membrane Permeabilization by Targeted Magnetic Nanoparticles in Alternating Magnetic Fields',
+    authors: 'Domenech, M., Marrero-Berrios, I., Torres-Lugo, M., Rinaldi, C.',
+    journal: 'ACS Nano',
+    year: '2013',
+    volume: '7',
+    pages: '5091-5101',
+    doi: 'doi.org/10.1021/nn4007048',
+  },
+  {
+    title: 'Hedgehog Signaling in Myofibroblasts Directly Promotes Prostate Tumor Cell Growth',
+    authors: 'Domenech, M., Bjerregaard, R., Bushman, W., Beebe, D. J.',
+    journal: 'Integrative Biology',
+    year: '2012',
+    volume: '4',
+    pages: '142-152',
+    doi: 'doi.org/10.1039/c1ib00104c',
+  },
+  {
+    title: 'Biological Implications of Polydimethylsiloxane-Based Microfluidic Cell Culture',
+    authors:
+      'Regehr, K. J., Domenech, M., Koepsel, J. T., Carver, K. C., Ellison-Zelski, S. J., Murphy, W. L., Schuler, L. A., Alarid, E. T., Beebe, D. J.',
+    journal: 'Lab on a Chip',
+    year: '2009',
+    volume: '9',
+    pages: '2132',
+    doi: 'doi.org/10.1039/b903043c',
+  },
+  {
+    title: 'Cellular Observations Enabled by Microculture: Paracrine Signaling and Population Demographics',
+    authors:
+      'Domenech, M., Yu, H., Warrick, J., Badders, N. M., Meyvantsson, I., Alexander, C. M., Beebe, D. J.',
+    journal: 'Integrative Biology',
+    year: '2009',
+    volume: '1',
+    pages: '267',
+    doi: 'doi.org/10.1039/b823059e',
+  },
+  // ── Patent Applications ──────────────────────────────────────────────────
+  {
+    type: 'patent',
+    title: 'Compositions and Methods Comprising Human-Induced Pluripotent Stem Cell-Derived Cardiomyocytes',
+    authors: 'Domenech-García, M. et al.',
+    year: '2024',
+    patentNumber: 'US Pat. App. No. 63/658,566',
+  },
+  {
+    type: 'patent',
+    title: 'Extracellular Matrix Hydrogels for Ambient Temperature Transport of Human Induced Pluripotent Stem Cell-Derived Cardiomyocytes',
+    authors: 'Domenech-García, M. et al.',
+    year: '2025',
+    patentNumber: 'US Pat. App. No. 63/856,134',
+    patentRef: 'WARF Ref. P250122US01',
+  },
+  {
+    type: 'patent',
+    title: 'Collagen-Coated Microcarrier-Based Platform for Serum-Free Cell Culture and Cryopreservation for Earth and Space Application',
+    authors: 'Domenech-García, M. et al.',
+    year: '2025',
+    patentNumber: 'US Pat. App. No. 63/896,337',
   },
 ];
 
@@ -240,10 +383,10 @@ export function PublicationsPage() {
         {/* Header */}
         <div className="mb-12">
           <div className="section-divider" />
-          <h1 className="mb-6">Publications</h1>
+          <h1 className="mb-6">Publications & Patents</h1>
           <p className="text-lg text-[var(--color-text-muted)] leading-relaxed max-w-3xl">
-            Peer-reviewed publications from the Domenech Research Lab. Full citation information 
-            and external links provided for all works.
+            Peer-reviewed publications and patent applications from the Domenech Research Lab.
+            Full citation information and external links provided for all works.
           </p>
         </div>
 
@@ -292,7 +435,7 @@ export function PublicationsPage() {
           </div>
 
           <div className="mt-6 text-sm text-[var(--color-text-muted)]">
-            Showing {filteredPubs.length} of {publications.length} publications
+            Showing {filteredPubs.length} of {publications.length} publications & patents
           </div>
         </div>
 
@@ -302,37 +445,56 @@ export function PublicationsPage() {
             <article key={idx} className="publication-item">
               <div className="flex items-start justify-between gap-6 mb-3">
                 <div className="flex-1">
-                  <h3 className="text-xl mb-2 leading-snug">
-                    {pub.title}
-                  </h3>
-                  <p className="text-sm text-[var(--color-text-muted)] mb-2">
-                    {pub.authors}
-                  </p>
-                  <p className="text-sm mb-3">
-                    <span className="font-medium text-[var(--color-text)]">{pub.journal}</span>
-                    <span className="text-[var(--color-text-muted)]">
-                      {' '}({pub.year}); {pub.volume}: {pub.pages}
-                    </span>
-                  </p>
-                  <div className="flex items-center gap-4 text-sm">
-                    <a
-                      href={`https://${pub.doi}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors"
-                    >
-                      DOI: {pub.doi}
-                      <ExternalLink size={14} />
-                    </a>
-                  </div>
+                  {pub.type === 'patent' && (
+                    <div className="flex items-center gap-2 mb-2">
+                      <ScrollText size={14} className="text-[var(--color-accent)]" />
+                      <span className="text-xs font-semibold uppercase tracking-wider text-[var(--color-accent)]">
+                        Patent Application
+                      </span>
+                    </div>
+                  )}
+                  <h3 className="text-xl mb-2 leading-snug">{pub.title}</h3>
+                  <p className="text-sm text-[var(--color-text-muted)] mb-2">{pub.authors}</p>
+
+                  {pub.type === 'patent' ? (
+                    <div className="text-sm space-y-1">
+                      <p className="font-medium text-[var(--color-text)]">{pub.patentNumber}</p>
+                      {pub.patentRef && (
+                        <p className="text-[var(--color-text-muted)]">{pub.patentRef}</p>
+                      )}
+                    </div>
+                  ) : (
+                    <>
+                      <p className="text-sm mb-3">
+                        <span className="font-medium text-[var(--color-text)]">{pub.journal}</span>
+                        <span className="text-[var(--color-text-muted)]">
+                          {' '}
+                          ({pub.year})
+                          {pub.volume && `; ${pub.volume}`}
+                          {pub.pages && `: ${pub.pages}`}
+                        </span>
+                      </p>
+                      {pub.doi && (
+                        <div className="flex items-center gap-4 text-sm">
+                          <a
+                            href={`https://${pub.doi}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors"
+                          >
+                            DOI: {pub.doi}
+                            <ExternalLink size={14} />
+                          </a>
+                        </div>
+                      )}
+                    </>
+                  )}
                 </div>
                 <div className="text-right flex-shrink-0">
                   <div className="text-sm font-medium text-[var(--color-secondary)] mb-1">
                     {pub.year}
                   </div>
-                  <div className="text-xs text-[var(--color-text-muted)]">
-                    {pub.pillar}
-                  </div>
+                  <div className="text-xs text-[var(--color-text-muted)]">{pub.pillar}</div>
                 </div>
               </div>
             </article>

@@ -1,6 +1,12 @@
-import { ArrowRight, FlaskConical, Microscope, Dna, TrendingUp } from 'lucide-react';
+import { ArrowRight, FlaskConical, Heart, Rocket, Layers } from 'lucide-react';
 import heroImage from 'figma:asset/098ca56a0bad280b20ca3b75c097af4cec647133.png';
 import exampleImage from 'figma:asset/372a01ab23d4e95e8a4c186852ff8e23534a1b2c.png';
+import cardiotoxicityImage from '../assets/pillars/cardiotoxicity.jpg';
+import microcarrierImage from '../assets/pillars/microcarrier.png';
+import transportImage from '../assets/pillars/transport.png';
+import bioinkImage from '../assets/pillars/bioink.png';
+import prstrtLogo from '../assets/funders/prstrt.svg';
+import researchApproachBg from '../assets/research-approach-bg.png';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
@@ -9,33 +15,33 @@ interface HomePageProps {
 export function HomePage({ onNavigate }: HomePageProps) {
   const pillars = [
     {
-      id: 'mechanobiology',
-      title: 'Stem-Cell Mechanobiology & Scalable Manufacturing',
+      id: 'microcarriers',
+      title: 'Cell Culture Microcarriers',
       icon: FlaskConical,
-      summary: 'Mechanical cues and engineered substrates tune MSC state, functional potency, and secretory output.',
-      image: 'https://images.unsplash.com/photo-1647083701139-3930542304cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdGVtJTIwY2VsbCUyMG1pY3Jvc2NvcGV8ZW58MXx8fHwxNzY5NDU4NjE1fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      summary: 'Surface-engineered microcarriers and cryopreservation workflows for scalable, closed-system stem cell manufacturing.',
+      image: microcarrierImage,
     },
     {
-      id: 'tumor',
-      title: 'Engineered Tumor Microenvironments',
-      icon: Microscope,
-      summary: 'Biomaterials recreating key physical features of the TME to interrogate signaling and therapeutic response.',
-      image: 'https://images.unsplash.com/photo-1706639996436-3c90695c7dd2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYW5jZXIlMjBjZWxscyUyMHR1bW9yfGVufDF8fHx8MTc2OTQ1ODYxNXww&ixlib=rb-4.1.0&q=80&w=1080',
+      id: 'cardiotoxicity',
+      title: 'Cardiac Cells for Cardiotoxicity Assays',
+      icon: Heart,
+      summary: 'iPSC-derived cardiomyocytes on engineered substrates for physiologically relevant drug safety screening.',
+      image: cardiotoxicityImage,
     },
     {
-      id: 'ev',
-      title: 'Extracellular Vesicles & Targeted Delivery',
-      icon: Dna,
-      summary: 'Decoding MSC-EV targeting mechanisms and translating design rules into synthetic delivery platforms.',
-      image: 'https://images.unsplash.com/photo-1707863080685-177f4f6e850d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2xlY3VsYXIlMjBiaW9sb2d5JTIwdmVzaWNsZXN8ZW58MXx8fHwxNzY5NDU4NjE2fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      id: 'transport',
+      title: 'Formulations for Ambient Transport',
+      icon: Rocket,
+      summary: 'Ambient-temperature preservation media for cell transport on Earth and aboard the International Space Station.',
+      image: transportImage,
     },
-    // {
-    //   id: 'quantitative',
-    //   title: 'Quantitative Methods & Multi-Omics',
-    //   icon: TrendingUp,
-    //   summary: 'Imaging and proteomic integration converting biological signals into testable mechanisms.',
-    //   image: 'https://images.unsplash.com/photo-1656337426914-5e5ba162d606?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwYW5hbHlzaXMlMjBwcm90ZW9taWNzfGVufDF8fHx8MTc2OTQ1ODYxNnww&ixlib=rb-4.1.0&q=80&w=1080',
-    // },
+    {
+      id: 'bioprinting',
+      title: 'Bioinks for Bioprinting Models',
+      icon: Layers,
+      summary: 'Custom bioink formulations and print workflows for constructing three-dimensional tissue and disease models.',
+      image: bioinkImage,
+    },
   ];
 
   return (
@@ -59,16 +65,16 @@ export function HomePage({ onNavigate }: HomePageProps) {
               Engineering microenvironments to decode cellular mechanobiology
             </h1>
             <p className="text-xl text-white leading-relaxed mb-8 max-w-3xl font-medium">
-              We design and build biomaterial platforms to understand how physical and biochemical 
-              cues regulate stem cell state, cancer phenotype, and extracellular vesicle function—translating 
-              discoveries into scalable manufacturing and targeted delivery systems.
+              We design biomaterial platforms and cell manufacturing workflows to understand how 
+              microenvironmental cues shape stem cell potency, cardiac safety, and tissue function—translating 
+              mechanobiology insights into scalable culture, transport, and bioprinting systems.
             </p>
             <div className="flex gap-6">
               <button
-                onClick={() => onNavigate('research')}
+                onClick={() => onNavigate('platforms')}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[var(--color-primary)] hover:bg-[var(--color-secondary)] hover:text-white transition-colors font-medium"
               >
-                Research Overview
+                Facilities & Platforms
                 <ArrowRight size={18} />
               </button>
               <button
@@ -83,47 +89,52 @@ export function HomePage({ onNavigate }: HomePageProps) {
       </section>
 
       {/* Research Approach Narrative */}
-      <section className="bg-[var(--color-surface)] border-b border-[var(--color-border)]">
-        <div className="max-w-[1200px] mx-auto px-8 lg:px-12 py-16 lg:py-20">
+      <section className="research-approach-section border-b border-[var(--color-border)]">
+        <div className="research-approach-bg" />
+        <div
+          className="research-approach-bg-image"
+          style={{ backgroundImage: `url(${researchApproachBg})` }}
+        />
+        <div className="relative z-10 max-w-[1200px] mx-auto px-8 lg:px-12 py-16 lg:py-20">
+          <div className="mb-12">
+            <div className="section-divider" />
+            <h2>Research Approach</h2>
+          </div>
           <div className="editorial-grid">
             <div>
-              <div className="section-divider" />
-              <h2>Research Approach</h2>
-            </div>
-            <div>
-              <p className="highlight-text">
+              <p className="highlight-text approach-statement font-bold">
                 Our work follows a coherent trajectory from fundamental mechanobiology questions 
                 to translational platform development.
               </p>
-              <div className="grid grid-cols-1 gap-8 mt-8">
-                <div>
-                  <h4>1. Engineered Microenvironments</h4>
-                  <p className="text-[var(--color-text-muted)]">
-                    We design biomaterials and microfabricated substrates with controlled mechanical, 
-                    topographical, and biochemical properties to serve as model systems.
-                  </p>
-                </div>
-                <div>
-                  <h4>2. Cellular Mechanotransduction</h4>
-                  <p className="text-[var(--color-text-muted)]">
-                    Quantitative imaging and multi-omics reveal how cells sense and respond to 
-                    microenvironmental cues through mechanosensor pathways.
-                  </p>
-                </div>
-                <div>
-                  <h4>3. Functional Outputs</h4>
-                  <p className="text-[var(--color-text-muted)]">
-                    We measure functional consequences—potency, secretome, immunomodulation, and 
-                    therapeutic efficacy—linking biophysical regulation to biological outcomes.
-                  </p>
-                </div>
-                <div>
-                  <h4>4. Translational Design Rules</h4>
-                  <p className="text-[var(--color-text-muted)]">
-                    Mechanistic insights inform rational design of cell manufacturing platforms, 
-                    targeted delivery systems, and tissue engineering strategies.
-                  </p>
-                </div>
+            </div>
+            <div className="grid grid-cols-1 gap-8">
+              <div>
+                <h4>1. Engineered Microenvironments</h4>
+                <p className="text-[var(--color-text-muted)]">
+                  We design biomaterials and microfabricated substrates with controlled mechanical, 
+                  topographical, and biochemical properties to serve as model systems.
+                </p>
+              </div>
+              <div>
+                <h4>2. Cellular Mechanotransduction</h4>
+                <p className="text-[var(--color-text-muted)]">
+                  Quantitative imaging and multi-omics reveal how cells sense and respond to 
+                  microenvironmental cues through mechanosensor pathways.
+                </p>
+              </div>
+              <div>
+                <h4>3. Functional Outputs</h4>
+                <p className="text-[var(--color-text-muted)]">
+                  We measure functional consequences—potency, secretome, immunomodulation, and 
+                  therapeutic efficacy—linking biophysical regulation to biological outcomes.
+                </p>
+              </div>
+              <div>
+                <h4>4. Translational Design Rules</h4>
+                <p className="text-[var(--color-text-muted)]">
+                  Mechanistic insights inform rational design of cell manufacturing platforms, 
+                  targeted delivery systems, and tissue engineering strategies.
+                </p>
               </div>
             </div>
           </div>
@@ -137,36 +148,32 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <div className="section-divider" />
             <h2 className="mb-4">Our Pillars</h2>
             <p className="text-lg text-[var(--color-text-muted)] max-w-3xl">
-              Three interconnected research areas drive our mechanobiology program.
+              Four interconnected research areas drive our mechanobiology program.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {pillars.map((pillar, idx) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {pillars.map((pillar) => (
               <div
                 key={pillar.id}
-                className="cursor-pointer group overflow-hidden border border-[var(--color-border)] hover:border-[var(--color-primary)] transition-colors"
-                onClick={() => onNavigate('research')}
+                className="overflow-hidden border border-[var(--color-border)]"
               >
                 <div className="relative overflow-hidden">
                   <img 
                     src={pillar.image} 
                     alt={pillar.title}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-64 object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 </div>
                 <div className="p-5">
                   <pillar.icon size={28} className="text-[var(--color-secondary)] mb-3" />
-                  <h3 className="text-lg mb-3 group-hover:text-[var(--color-primary)] transition-colors leading-tight">
+                  <h3 className="text-lg mb-3 leading-tight">
                     {pillar.title}
                   </h3>
-                  <p className="text-sm text-[var(--color-text-muted)] leading-relaxed mb-4">
+                  <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
                     {pillar.summary}
                   </p>
-                  <div className="inline-flex items-center gap-2 text-[var(--color-primary)] font-medium text-sm group-hover:gap-3 transition-all">
-                    Learn more <ArrowRight size={14} />
-                  </div>
                 </div>
               </div>
             ))}
@@ -299,7 +306,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
             </div>
             <div className="flex items-center justify-center p-6 grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100 md:col-span-3 lg:col-span-1">
               <img 
-                src="https://res.cloudinary.com/ximbio/image/upload/c_fit,fl_lossy,q_auto/31238f70-4fae-4154-ba62-4b6a95da8edf.png"
+                src={prstrtLogo}
                 alt="PRSTRT"
                 className="max-h-16 w-auto object-contain"
               />

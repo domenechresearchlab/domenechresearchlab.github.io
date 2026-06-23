@@ -51,8 +51,7 @@ export function Header({ currentPage, onNavigate }: HeaderProps) {
     {
       label: 'Research',
       items: [
-        { id: 'research', label: 'Research Pillars' },
-        // { id: 'platforms', label: 'Platforms & Methods' },
+        { id: 'platforms', label: 'Facilities & Platforms' },
         { id: 'publications', label: 'Publications' },
       ],
     },
