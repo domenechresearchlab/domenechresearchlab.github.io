@@ -44,7 +44,7 @@ export function PeoplePage() {
       name: "Carlos A. Barreto Gamarra",
       degree: "PhD Candidate, Chemical Engineering",
       focus:
-        "",
+        "Scale-up Culture of Mature hiPSC-CMs for Cell Manufacturing Applications",
       methods: "",
       linkedinUrl: "https://www.linkedin.com/in/cbarretogamarra/",
       image: carlosBarretoImg,
@@ -99,7 +99,7 @@ export function PeoplePage() {
       name: "Mared Roa Fontalvo",
       degree: "M.S. Student, Chemical Engineering",
       focus:
-        "Scalable suspension culture of cardiac cells in bioreactors",
+        "Scalable Suspension Culture of Cardiac Cells in Bioreactors",
       methods: [],
       linkedinUrl: "https://www.linkedin.com/in/mared-roa-835342279",
       image: maredRoaImg,
@@ -108,20 +108,20 @@ export function PeoplePage() {
       name: "Sebastián A. Cruz Romero",
       degree: "M.S. Student, Bioengineering",
       focus:
-        "",
-      methods: ["Mamallian cell culture", "Extracellular Vesicle (EV) isolation and characterization", "Fluorescence microscopy", "Omics Analysis"],
+        "A Learned Representation of Mesenchymal Stromal Cell-derived Extracellular Vesicles for Engineering Cell Therapeutics",
+      methods: ["Mamallian cell culture", "Extracellular Vesicle (EV) isolation and characterization", "Multi-omics analysis", "Machine learning", "Semi-supervised learning"],
       linkedinUrl: "https://www.linkedin.com/in/romerocruzsa",
       image: cruzRomeroImg,
     },
-    {
-      name: "Arleen Hidalgo",
-      degree: "M.E. Student, Bioengineering",
-      focus:
-        "",
-      methods: "",
-      linkedinUrl: "https://www.linkedin.com/in/harleen-hidalgo/",
-      image: arleenHidalgoImg,
-    },
+    // {
+    //   name: "Arleen Hidalgo",
+    //   degree: "M.E. Student, Bioengineering",
+    //   focus:
+    //     "",
+    //   methods: "",
+    //   linkedinUrl: "https://www.linkedin.com/in/harleen-hidalgo/",
+    //   image: arleenHidalgoImg,
+    // },
   ];
 
   const undergrad = [
@@ -134,7 +134,7 @@ export function PeoplePage() {
     },
     {
       name: "Viviana Vélez Avilés",
-      year: "B.S. Chemical Engineering (Expected 2027)",
+      year: "B.S. Chemical Engineering",
       focus:
         "Engineering Collagen-Based 3D Bioprinted Models to Study Tumor Cell Invasion",
       linkedinUrl:
