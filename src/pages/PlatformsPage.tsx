@@ -16,7 +16,6 @@ import nanobrookDls from '../assets/instruments/nanobrook-dls.png';
 import tecanSpark from '../assets/instruments/tecan-spark.png';
 import seahorse from '../assets/instruments/seahorse-xfe.jpeg';
 import keyenceBzX800 from '../assets/instruments/keyence-bz-x800.jpeg';
-import incucyte from '../assets/instruments/incucyte.jpeg';
 import quantStudio from '../assets/instruments/quantstudio-3.jpeg';
 import olympusCm30 from '../assets/instruments/olympus-cm30.jpeg';
 import kingfisher from '../assets/instruments/kingfisher-duo.png';
@@ -168,11 +167,6 @@ export function PlatformsPage() {
       name: 'BZ-X800 All-in-One Fluorescence Microscope — Keyence',
       image: keyenceBzX800,
       alt: 'Keyence BZ-X800 confocal fluorescence microscope',
-    },
-    {
-      name: 'Incucyte Live-Cell Analysis System',
-      image: incucyte,
-      alt: 'Incucyte live-cell imaging and analysis system',
     },
     {
       name: 'QuantStudio 3 — Applied Biosystems',
