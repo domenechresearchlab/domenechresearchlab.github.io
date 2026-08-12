@@ -1,10 +1,10 @@
 import { ArrowRight, FlaskConical, Heart, Rocket, Layers } from 'lucide-react';
 import heroImage from 'figma:asset/098ca56a0bad280b20ca3b75c097af4cec647133.png';
-import exampleImage from 'figma:asset/372a01ab23d4e95e8a4c186852ff8e23534a1b2c.png';
 import cardiotoxicityImage from '../assets/pillars/cardiotoxicity.jpg';
 import microcarrierImage from '../assets/pillars/microcarrier.png';
 import transportImage from '../assets/pillars/transport.png';
 import bioinkImage from '../assets/pillars/bioink.png';
+import featuredMicrogravityImage from '../assets/image.png';
 import prstrtLogo from '../assets/funders/prstrt.svg';
 import researchApproachBg from '../assets/research-approach-bg.png';
 
@@ -195,48 +195,42 @@ export function HomePage({ onNavigate }: HomePageProps) {
             <div>
               <div className="mb-4">
                 <span className="text-xs font-semibold text-[var(--color-secondary)] uppercase tracking-wider">
-                  Stem Cell Research & Therapy, 2025
+                  npj Microgravity, 2026
                 </span>
               </div>
               
               {/* Paper Preview Image */}
               <div className="mb-6 overflow-hidden rounded-sm border border-[var(--color-border)]">
                 <img 
-                  src={exampleImage}
-                  alt="Featured publication preview"
-                  className="w-full h-72 object-cover object-top"
+                  src={featuredMicrogravityImage}
+                  alt="Pre-flight, in-flight, and post-flight microcarrier culture workflow"
+                  className="block w-full h-auto"
                 />
               </div>
 
               <h3 className="mb-4">
-                Cryogenic Microcarrier-Assisted Stem Cell Storage (Cryo-MASCS): A Preservation Method Enabling Scalable Culture of Human Mesenchymal Stem Cells
+                Collagen-heparan sulfate microcarriers support mesenchymal stem cell culture in microgravity and streamline post-flight recovery
               </h3>
               <p className="text-[var(--color-text-muted)] mb-4 leading-relaxed">
-                Microcarrier (µC) suspension systems enable closed, high-density manufacturing of human mesenchymal
-                stem cells (MSCs), but current workflows remain labor-intensive because they require post-thaw
-                cryoprotectant removal and static culture steps to allow cell attachment. To address these bottlenecks,
-                we developed a cryogenic microcarrier-assisted stem cell storage (Cryo-MASCS) workflow that integrates
-                cell attachment, cryopreservation, and thawing directly on surface-engineered µCs. MSCs were pre-seeded
-                onto µCs coated with stacked heparan sulfate-collagen bilayers, cryopreserved on-carrier in either
-                conventional dimethyl sulfoxide (DMSO)-supplemented medium or a DMSO-free, serum-free (SF) minimally
-                supplemented medium, and then thawed and returned directly to suspension culture without intermediate
-                processing. We optimized cell seeding density to maximize recovery. Following thaw, MSCs on engineered
-                µCs and cryopreserved in either DMSO-containing or DMSO-free media retained viability comparable to
-                traditional suspension cultures in DMSO-containing medium, while remaining attached to the carrier
-                surface. Surface-engineered µCs show increased MSC yield within seven days in SF medium, significantly
-                outperforming commercial collagen-coated µCs. Moreover, MSCs recovered metabolic activity and retained
-                robust suppression of lipopolysaccharide-induced M1 macrophage polarization after IFN-γ priming. These
-                findings demonstrate that direct cryopreservation of MSCs on heparan sulfate-collagen-coated µCs is
-                compatible with both DMSO-free and DMSO-supplemented conditions and supports streamlined, scalable
-                culture of undifferentiated MSCs for translational applications.
+                This study presents the first integrated workflow for culturing pre-seeded mesenchymal stem cells on
+                heparan sulfate-collagen microcarriers through cryopreservation, ambient thaw, and expansion aboard the
+                International Space Station. The cells remained viable and adherent throughout the spaceflight
+                lifecycle, proliferated earlier in microgravity than on Earth, and retained proliferative capacity and
+                multipotency after flight. The results establish a scalable strategy for stem cell research and
+                biomanufacturing in space while minimizing crew intervention and streamlining post-flight recovery.
               </p>
               <p className="text-sm text-[var(--color-text-muted)] mb-6">
-                <span className="font-medium">Authors:</span> Rivera-Crespo, C., Velez-Román, L., Acevedo-Esquilin, M., Mills, H. J., Holzhaus, O. G., Domenech-García, M.
+                <span className="font-medium">Authors:</span> Rivera-Crespo, C., Vélez-Román, L., Meza-Morales, W., Mills, H. J., Gámez-Holzhaus, O., Mora, C., Domenech-García, M.
               </p>
-              <button className="inline-flex items-center gap-2 text-[var(--color-primary)] font-medium hover:text-[var(--color-secondary)] transition-colors">
+              <a
+                href="https://doi.org/10.1038/s41526-026-00643-8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[var(--color-primary)] font-medium hover:text-[var(--color-secondary)] transition-colors"
+              >
                 Read full article
                 <ArrowRight size={16} />
-              </button>
+              </a>
             </div>
           </div>
         </div>

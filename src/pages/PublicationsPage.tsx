@@ -22,6 +22,14 @@ export function PublicationsPage() {
   const publications: Publication[] = [
   {
     title:
+      'Collagen-heparan sulfate microcarriers support mesenchymal stem cell culture in microgravity and streamline post-flight recovery',
+    authors: 'Rivera-Crespo, C., Vélez-Román, L., Meza-Morales, W. et al.',
+    journal: 'npj Microgravity',
+    year: '2026',
+    doi: 'doi.org/10.1038/s41526-026-00643-8',
+  },
+  {
+    title:
       'Magnetoelastic Cell Monitoring System for Evaluating the Effects of Surface Chemistry on the Performance of Mesenchymal Stem Cell Growth',
     authors:
       'Skinner, W. S., Rivera-Crespo, C., Gebreyesus, E. A., Cifuentes, S., Tan, S., Douglas, T., Domenech-Garcia, M., Ong, K. G.',
